@@ -1,0 +1,197 @@
+// Colors
+$bg-color: #080808;
+$bg-gray: #1B1B1B;
+$gray: #525252;
+$text-color: #9C9C9C;
+$white: #ffffff;
+$green: #62BA1B;
+$dark-green: #3F8E00;
+$green-shadow: rgba(63, 142, 0, 0.50);
+
+// Fonts
+$h-font: 'Raleway';
+$text-font: "IBM Plex Mono";
+$text-size: 14px;
+$big-text-size: 16px;
+$small-text-size: 12px;
+$display-size: 44px;
+$small-display-size: 32px;
+$subtittle-size: 24px;
+$small-subtitle-siz: 20px;
+
+// Sizes
+$client-logo-w: 160px;
+$small-client-logo-w: 145px;
+$client-logo-h: 60px;
+
+// Mixins
+@mixin links($color, $hover-color) {
+    color: $color;
+    text-decoration: none;
+    transition: color 0.2s;
+    &:hover {
+        color: $hover-color;
+    }
+}
+@mixin svg-link($opacity-inicial, $final-opct) {
+    opacity: $opacity-inicial;
+    transition: all 0.2s;
+    &:hover {
+        opacity: $final-opct;
+    }
+}
+
+@mixin texto($fonte, $size, $peso, $cor) {
+    font-family: $fonte;
+    font-size: $size;
+    font-weight: $peso;
+    color: $cor;
+}
+
+// Design
+body {
+    background: $bg-color;
+}
+
+header {
+    background: $bg-gray;
+    border-radius: 0px 0px 8px 8px;
+    a {
+        @include links($text-color, $white);
+        font-family: $text-font;
+        font-size: $text-size;
+    }
+    #social-medias a {
+        font-size: $big-text-size;
+    }
+
+    #menu-btn {
+        color: $white;
+        font-size: 20px;
+    }
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+main {
+    #personal-img {
+        transition: all 1s;
+        border-radius: 100%;
+        &:hover {
+            border: solid 20px $bg-gray;
+            animation: girar 5s linear infinite;
+        }
+    }
+    
+    font-family: $text-font;
+    h1 {
+        @include texto($h-font, $display-size, 800, $white)
+    }
+    h2 {
+        @include texto($h-font, $subtittle-size, 200, $white)
+    }
+    p {
+        @include texto($text-font, $text-size, 400, $text-color)
+    }
+
+    .btn-green {
+        color: $white;
+        display: flex;
+        padding: 21px 64px;
+        align-items:baseline;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 4px;
+        border: 1px solid $green;
+        background: $dark-green;
+        box-shadow: 0 8px 30px 0 $green-shadow;
+        transition: all 0.3s;
+
+        &:hover {
+            scale: 1.05;
+            cursor: pointer;
+        }
+
+        span {
+            @include texto($text-font, $big-text-size, 700, $white)
+        }
+    }
+}
+
+footer {
+    h3 {
+        @include texto($text-font, $text-size, 400, $white)
+    }
+    .logo {
+        border: solid 1px $bg-gray;
+        border-radius: 8px;
+        width: $client-logo-w;
+        height: $client-logo-h;
+        transition: all 0.3s;
+
+        img {
+            opacity: 0.3;
+            transition: all 0.3s;
+        }
+        &:hover {
+            cursor: pointer;
+            scale: 1.1;
+            img {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    main {
+        h1 {
+            @include texto($h-font, $small-display-size, 800, $white)
+        }
+        h2 {
+            @include texto($h-font, $small-subtitle-siz, 200, $white)
+        }
+        p {
+            @include texto($text-font, $small-text-size, 400, $text-color)
+        }
+        #personal-img {
+            width: 250px;
+            height: 250px;
+        }
+    }
+    footer {
+        .logo {
+            width: $small-client-logo-w;
+        }
+    }
+}
+
+@media (max-width: 710px) {
+    header {
+        #menu-btn {
+            background: none;
+            border: none;
+            outline: none;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .small-menu {
+            background: $bg-gray;
+        }
+    }
+
+    main {
+        text-align: center;
+        .btn-green {
+            width: 100%;
+        }
+    }
+}

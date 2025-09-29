@@ -1,0 +1,121 @@
+// mixins
+@mixin container($pad: 0, $margem: 0, $gap:0, $justy: center, $algn:center, $direction:row) {
+    display: flex;
+    justify-content: $justy;
+    align-items: $algn;
+    padding: $pad;
+    margin: $margem;
+    gap: $gap;
+    flex-direction: $direction;
+}
+
+// layout
+* {
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+}
+header {
+    @include container(28px 100px, 10px 90px, 0, space-between);
+
+    .small-menu, #menu-btn {
+        display: none;
+    }
+
+    #top-menu {
+        @include container(0, 0, 32px);
+    }
+    #social-medias {
+        @include container(0, 0, 24px);
+    }
+}
+
+main {
+    @include container(0px 75px, 96px 90px, 0, space-between);
+    #header-text {
+        @include container(0px, 0px, 30px, center, flex-start, column);
+
+        #heading-and-subheading {
+            max-width: 560px;
+            @include container(0, 0, 10px, center, flex-start, column);
+    
+            #heading {
+                @include container(10px 0px, 0, 10px, center, flex-start, column);
+            }
+        }
+    }
+}
+
+footer {
+    @include container(0, 20px 180px, 20px, center, flex-start, column);
+
+    #clients-logos {
+        @include container(0, 0, 30px, center, flex-start);
+        .logo {
+            @include container();
+        }
+    }
+}
+
+
+@media (max-width: 1100px) {
+    header {
+        @include container(28px 24px, 10px 48px, 0, space-between);
+    }
+    main {
+        @include container(0px, 96px 48px, 0, space-between);
+        #heading-and-subheading {
+            max-width: 400px;
+        }
+    }
+    footer {
+        @include container(0, 20px 48px, 20px, center, flex-start, column);
+    }
+}
+
+@media (max-width: 710px) {
+    header {
+        @include container(28px 24px, 10px 16px, 0, space-between);
+        .small-menu {
+            display: none;
+        }
+        .open {
+            @include container(8px 24px, 0, 8px, center, flex-start, column);
+            position: absolute;
+            top: 60px;
+            left: 16px;
+        }
+        #menu-btn {
+            display: block;
+        }
+        #top-menu {
+            display: none;
+        }
+    }
+    main {
+        @include container(0px, 96px 16px, 0, center, center, column-reverse);
+        #header-text {
+            align-items: center;
+
+            #heading-and-subheading {
+                align-items: center;
+                #heading {
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    footer {
+        @include container(0, 20px 16px, 20px, center, flex-start, column);
+        overflow-inline:scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        scrollbar-width: 0px;
+
+        h3 {
+            position: sticky;
+            left: 0;
+        }
+    }
+}
