@@ -132,6 +132,7 @@ button{
 
 .last-jobs{
     display: flex;
+    width: 920px;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
