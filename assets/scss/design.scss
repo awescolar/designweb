@@ -1,0 +1,66 @@
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+    color: #FFF;
+}
+
+h1{
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 44px;
+    font-weight: 800;
+}
+
+h3{
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+h5{
+    color: #FFF;
+    font-family: "IBM Plex Mono";
+    font-size: 14px;
+    font-weight: 200;
+}
+
+p{
+    color: #9C9C9C;
+    font-family: "IBM Plex Mono";
+    font-size: 14px;
+    line-height: 160%;
+}
+
+button{
+    border: 1px solid #62BA1B;
+    background: #3F8E00;
+    box-shadow: 0 8px 30px 0 rgba(63, 142, 0, 0.50); 
+    color: #FFF;
+    font-family: "IBM Plex Mono";
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.nav-header{
+    background: #1B1B1B;
+}
+
+.menu-navegacao a{
+    color: #9C9C9C;
+    font-family: "IBM Plex Mono";
+    font-size: 14px;
+    letter-spacing: 0.14px;
+}
+
+.menu-social a{
+    color: #9C9C9C;
+}
+
+.job-list li{
+    border: 1px solid #1B1B1B;
+}

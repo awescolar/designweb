@@ -5,17 +5,8 @@
     box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
-}
-
 ul{
     list-style: none;
-}
-
-body{
-    background-color: black;
-    color: #FFF;
 }
 
 main{
@@ -27,46 +18,11 @@ main{
     flex-direction: column;
 }
 
-h1{
-    color: #FFF;
-    font-family: Raleway;
-    font-size: 44px;
-    font-weight: 800;
-}
-
-h3{
-    color: #FFF;
-    font-family: Raleway;
-    font-size: 24px;
-    font-weight: 200;
-}
-
-h5{
-    color: #FFF;
-    font-family: "IBM Plex Mono";
-    font-size: 14px;
-    font-weight: 200;
-}
-
-p{
-    color: #9C9C9C;
-    font-family: "IBM Plex Mono";
-    font-size: 14px;
-    line-height: 160%;
-}
-
 button{
     display: flex;
     padding: 21px 64px;
     align-items: center;
     gap: 10px;
-    border-radius: 4px;
-    border: 1px solid #62BA1B;
-    background: #3F8E00;
-    box-shadow: 0 8px 30px 0 rgba(63, 142, 0, 0.50); 
-    color: #FFF;
-    font-family: "IBM Plex Mono";
-    font-weight: 700;
 }
 
 .header{
@@ -83,7 +39,6 @@ button{
     width: 1100px;
     padding: 28px 100px;
     border-radius: 6px;
-    background: #1B1B1B;
     margin-top: 24px;
 }
 
@@ -93,21 +48,10 @@ button{
     gap: 32px;
 }
 
-.menu-navegacao a{
-    color: #9C9C9C;
-    font-family: "IBM Plex Mono";
-    font-size: 14px;
-    letter-spacing: 0.14px;
-}
-
 .menu-social{
     display: flex;
     align-items: center;
     gap: 25px;
-}
-
-.menu-social a{
-    color: #9C9C9C;
 }
 
 .container{
@@ -152,7 +96,6 @@ button{
     width: 160px;
     height: 60px;
     border-radius: 6px;
-    border: 1px solid #1B1B1B;
     display: flex;
     align-items: center;
     justify-content: center;
