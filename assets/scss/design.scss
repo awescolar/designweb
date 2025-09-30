@@ -33,13 +33,6 @@ $client-logo-h: 60px;
         color: $hover-color;
     }
 }
-@mixin svg-link($opacity-inicial, $final-opct) {
-    opacity: $opacity-inicial;
-    transition: all 0.2s;
-    &:hover {
-        opacity: $final-opct;
-    }
-}
 
 @mixin texto($fonte, $size, $peso, $cor) {
     font-family: $fonte;
