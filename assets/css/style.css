@@ -39,7 +39,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 75px;
+  padding: 0px 100px;
   margin: 96px 90px;
   gap: 0;
   flex-direction: row;
@@ -115,7 +115,7 @@ footer #clients-logos .logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px;
+    padding: 0px 24px;
     margin: 96px 48px;
     gap: 0;
     flex-direction: row;
