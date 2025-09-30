@@ -1,3 +1,4 @@
+
 /**    Especificando as fontes */
 $font-titulo : "Raleway", sans-serif;
 $font-texto : "IBM Plex Mono", monospace;
@@ -10,6 +11,23 @@ $cor-text-body: #9C9C9C;
 $cor-border-button: #62BA1B;
 
 body{
-    font: $font-texto;
+    font-family: $font-texto;
 
+}
+
+body{
+    font: $font-texto;
+    background-color: $cor-bg-body;
+    color: $cor-text-body
+}
+
+.header{
+    .menu-navegacao()
+    .menu-social()
+}
+
+.job-list{}
+.lista-sem-estilo{
+    padding: 0;
+    list-style: none;
 }

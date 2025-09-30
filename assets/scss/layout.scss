@@ -1,0 +1,42 @@
+
+/**
+Regras de break points
+*/
+$break-desktop: 1200px;
+$break-tablet: 900px;
+$break-mobile: 700px;
+$break-watch: 400px;
+
+.container{
+    max-width: $break-desktop;
+    margin-left: auto;
+    margin-right: auto;
+    @extend .display-flex;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.alinhar-esquerda{
+    justify-content: flex-start;
+}
+.alinhar-esquerda{
+    align-items: flex-start;
+}
+.alinhar-direita{
+    justify-content: flex-end;
+}
+.alinhar-direita{
+    align-items: flex-end;
+}
+.alinhar-coluna{
+    flex-direction: column;
+}
+.alinhar-linha{
+    flex-direction: row;
+}
+
+.dividir-extremidades{
+    justify-content: space-between;
+}
