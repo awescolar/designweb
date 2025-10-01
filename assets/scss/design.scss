@@ -1,11 +1,10 @@
-/**    Especificando as fontes */
 $font-titulo : "Raleway",
 sans-serif;
 $font-texto : "IBM Plex Mono",
 monospace;
 
-/**    Especificando cores */
-$cor-bg-body: #1B1B1B;
+$cor-bg-header: #1B1B1B;
+$cor-bg-body: #080808;
 $cor-bg-button: #3F8E00;
 $cor-text-title: #FFFFFF;
 $cor-text-body: #9C9C9C;
@@ -20,9 +19,26 @@ body {
 }
 
 .header {
-    .menu-navegacao {}
+    border-radius: 0 0 6px 6px;
+    background: $cor-bg-header;
+    color: $cor-text-body;
+    @extend .lista-sem-estilo;
 
-    .menu-social {}
+    .menu{
+        li{
+            color: $cor-text-body;
+            font-family: $font-texto;
+            letter-spacing: 0.14px;
+        }
+    }
+
+    .menu-navegacao {
+        color: $cor-text-body;
+    }
+
+    .menu-social {
+        color: $cor-text-body;
+    }
 }
 
 main {
@@ -40,23 +56,25 @@ main {
             font-weight: 200;
         }
 
-
         button {
+            font-size: 16px;
+            font-family: $font-texto;
+            font-weight: 700;
             color: $cor-text-title;
-            padding: 1em 3em;
+            padding: 21px 64px;
             border-radius: 4px;
             border: 1px solid $cor-border-button;
             background: $cor-border-button;
             box-shadow: 0 8px 30px 0 rgba($cor-bg-button, 0.50);
         }
     }
-
-    .foto {}
 }
 
-.job-list {}
-
 .lista-sem-estilo {
-    padding: 0;
     list-style: none;
+}
+
+.link{
+    color: $cor-text-body;
+    text-decoration: none;
 }

@@ -1,0 +1,83 @@
+@charset "UTF-8";
+header {
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 66px;
+}
+header .menu {
+  margin-left: 30px;
+  margin-right: 50px;
+  padding: 0;
+  gap: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container p {
+  margin-bottom: 38px;
+}
+
+.last-jobs h5 {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.last-jobs .lista-sem-estilo {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  max-width: 1200px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 70px;
+}
+.last-jobs .lista-sem-estilo img {
+  width: 110%;
+}
+
+button {
+  padding: 21px 64px;
+}
+
+.display-flex, .menu-navegação, .menu-social, .container {
+  display: flex;
+}
+
+.alinhar-h-esquerda, .menu-navegação {
+  justify-content: flex-start;
+}
+
+.alinhar-v-esquerda {
+  align-items: flex-start;
+}
+
+.alinhar-h-direita, .menu-social {
+  justify-content: flex-end;
+}
+
+.alinhar-v-direita {
+  align-items: flex-end;
+}
+
+.alinhar-coluna {
+  flex-direction: column;
+}
+
+.alinhar-linha {
+  flex-direction: row;
+}
+
+.dividir-extremidades {
+  padding: 0;
+  justify-content: space-between;
+}
+
+.ajuste-menu, header {
+  padding: 12px 80px;
+}
+
+/*# sourceMappingURL=layout.css.map */
