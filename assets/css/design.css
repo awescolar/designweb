@@ -1,0 +1,58 @@
+body {
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #080808;
+  color: #9C9C9C;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+.header {
+  border-radius: 0 0 6px 6px;
+  background: #1B1B1B;
+  color: #9C9C9C;
+}
+.header .menu li {
+  color: #9C9C9C;
+  font-family: "IBM Plex Mono", monospace;
+  letter-spacing: 0.14px;
+}
+.header .menu-navegacao {
+  color: #9C9C9C;
+}
+.header .menu-social {
+  color: #9C9C9C;
+}
+
+main .perfil h1 {
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+  font-size: 44px;
+}
+main .perfil h3 {
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+}
+main .perfil button {
+  font-size: 16px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  color: #FFFFFF;
+  padding: 21px 64px;
+  border-radius: 4px;
+  border: 1px solid #62BA1B;
+  background: #62BA1B;
+  box-shadow: 0 8px 30px 0 rgba(63, 142, 0, 0.5);
+}
+
+.lista-sem-estilo, .header {
+  list-style: none;
+}
+
+.link {
+  color: #9C9C9C;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=design.css.map */

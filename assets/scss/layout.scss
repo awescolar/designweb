@@ -1,11 +1,33 @@
-/**
-regras de break points
-*/
-
 $break-desktop: 1200px;
 $break-tablet: 900px;
 $break-mobile: 768px;
 $break-watch: 400px;
+
+
+header{
+    max-width: $break-desktop;
+    margin: auto;
+    margin-bottom: 66px;
+    
+    @extend .ajuste-menu;
+    .menu{
+        margin-left: 30px;
+        margin-right: 50px;
+        padding: 0;
+        gap: 30px;
+    }
+}
+
+.menu-navegação{
+    @extend .display-flex;
+    @extend .alinhar-h-esquerda;
+    
+}
+
+.menu-social{
+    @extend .display-flex;
+    @extend .alinhar-h-direita;
+}
 
 
 .container{
@@ -13,6 +35,36 @@ $break-watch: 400px;
     margin-left: auto;
     margin-right: auto;
     @extend .display-flex;
+
+    p{
+        margin-bottom: 38px;
+    }
+}
+
+.last-jobs{
+    h5{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .lista-sem-estilo{
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        max-width: $break-desktop;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 70px;
+
+        img{
+            width: 110%;
+        }
+    }
+}
+
+button{
+    padding: 21px 64px;
 }
 
 .display-flex{
@@ -39,5 +91,10 @@ $break-watch: 400px;
 }
 
 .dividir-extremidades{
+    padding: 0;
     justify-content: space-between;
+}
+
+.ajuste-menu{
+    padding: 12px 80px;
 }

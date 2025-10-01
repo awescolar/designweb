@@ -1,0 +1,140 @@
+@charset "UTF-8";
+body {
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #080808;
+  color: #9C9C9C;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+.header {
+  border-radius: 0 0 6px 6px;
+  background: #1B1B1B;
+  color: #9C9C9C;
+}
+.header .menu li {
+  color: #9C9C9C;
+  font-family: "IBM Plex Mono", monospace;
+  letter-spacing: 0.14px;
+}
+.header .menu-navegacao {
+  color: #9C9C9C;
+}
+.header .menu-social {
+  color: #9C9C9C;
+}
+
+main .perfil h1 {
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+  font-size: 44px;
+}
+main .perfil h3 {
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+}
+main .perfil button {
+  font-size: 16px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  color: #FFFFFF;
+  padding: 21px 64px;
+  border-radius: 4px;
+  border: 1px solid #62BA1B;
+  background: #62BA1B;
+  box-shadow: 0 8px 30px 0 rgba(63, 142, 0, 0.5);
+}
+
+.lista-sem-estilo, .header {
+  list-style: none;
+}
+
+.link {
+  color: #9C9C9C;
+  text-decoration: none;
+}
+
+header {
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 66px;
+}
+header .menu {
+  margin-left: 30px;
+  margin-right: 50px;
+  padding: 0;
+  gap: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container p {
+  margin-bottom: 38px;
+}
+
+.last-jobs h5 {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.last-jobs .lista-sem-estilo {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  max-width: 1200px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 70px;
+}
+.last-jobs .lista-sem-estilo img {
+  width: 110%;
+}
+
+button {
+  padding: 21px 64px;
+}
+
+.display-flex, .menu-navegação, .menu-social, .container {
+  display: flex;
+}
+
+.alinhar-h-esquerda, .menu-navegação {
+  justify-content: flex-start;
+}
+
+.alinhar-v-esquerda {
+  align-items: flex-start;
+}
+
+.alinhar-h-direita, .menu-social {
+  justify-content: flex-end;
+}
+
+.alinhar-v-direita {
+  align-items: flex-end;
+}
+
+.alinhar-coluna {
+  flex-direction: column;
+}
+
+.alinhar-linha {
+  flex-direction: row;
+}
+
+.dividir-extremidades {
+  padding: 0;
+  justify-content: space-between;
+}
+
+.ajuste-menu, header {
+  padding: 12px 80px;
+}
+
+/*# sourceMappingURL=style.css.map */
