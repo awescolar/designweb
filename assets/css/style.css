@@ -300,11 +300,11 @@ footer .logo:hover {
     flex-direction: row-reverse;
   }
   header #menu-btn {
-    display: block;
     background: none;
     border: none;
     outline: none;
     display: flex;
+    gap: 8px;
   }
   header #menu-btn:hover {
     cursor: pointer;

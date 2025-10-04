@@ -37,11 +37,11 @@
         
         @include container(28px 24px, 10px 16px, 0, space-between, center, row-reverse);
         #menu-btn {
-            display: block;
             background: none;
             border: none;
             outline: none;
             display: flex;
+            gap: 8px;
             &:hover {
                 cursor: pointer;
             }
