@@ -295,9 +295,10 @@ footer .logo:hover {
     justify-content: space-between;
     align-items: center;
     padding: 28px 24px;
-    margin: 10px 16px;
+    margin: 0;
     gap: 0;
     flex-direction: row-reverse;
+    border-radius: 0;
   }
   header #menu-btn {
     background: none;

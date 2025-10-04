@@ -35,7 +35,8 @@
 @media (max-width: 768px) {
     header {
         
-        @include container(28px 24px, 10px 16px, 0, space-between, center, row-reverse);
+        @include container(28px 24px, 0, 0, space-between, center, row-reverse);
+        border-radius: 0;
         #menu-btn {
             background: none;
             border: none;
