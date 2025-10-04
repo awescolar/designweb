@@ -166,14 +166,18 @@ footer {
     }
 }
 
-@media (max-width: 710px) {
+@media (max-width: 768px) {
     header {
         #menu-btn {
             background: none;
             border: none;
             outline: none;
+            display: flex;
             &:hover {
                 cursor: pointer;
+            }
+            span {
+                @include texto($text-font, $big-text-size, 400, $text-color)
             }
         }
         .small-menu {
@@ -185,6 +189,8 @@ footer {
         text-align: center;
         .btn-green {
             width: 100%;
+            font-size: 14px;
+            padding: 21px 30px;
         }
     }
 }

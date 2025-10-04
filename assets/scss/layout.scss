@@ -35,7 +35,7 @@ main {
         @include container(0px, 0px, 30px, center, flex-start, column);
 
         #heading-and-subheading {
-            max-width: 560px;
+            max-width: 400px;
             @include container(0, 0, 10px, center, flex-start, column);
     
             #heading {
@@ -49,7 +49,7 @@ footer {
     @include container(0, 20px 180px, 20px, center, flex-start, column);
 
     #clients-logos {
-        @include container(0, 0, 30px, center, flex-start);
+        @include container(0, 0, 30px, center);
         .logo {
             @include container();
         }
@@ -63,26 +63,22 @@ footer {
     }
     main {
         @include container(0px, 96px 48px, 0, space-between);
-        #heading-and-subheading {
-            max-width: 400px;
-        }
     }
     footer {
         @include container(0, 20px 48px, 20px, center, flex-start, column);
     }
 }
 
-@media (max-width: 710px) {
+@media (max-width: 768px) {
     header {
-        @include container(28px 24px, 10px 16px, 0, space-between);
-        .small-menu {
-            display: none;
-        }
+        
+        @include container(28px 24px, 10px 16px, 0, space-between, center, row-reverse);
+        
         .open {
             @include container(8px 24px, 0, 8px, center, flex-start, column);
             position: absolute;
-            top: 60px;
-            left: 16px;
+            top: 85px;
+            right: 16px;
         }
         #menu-btn {
             display: block;
@@ -98,6 +94,7 @@ footer {
 
             #heading-and-subheading {
                 align-items: center;
+                max-width: 600px;
                 #heading {
                     align-items: center;
                 }
