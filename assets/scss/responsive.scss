@@ -1,0 +1,107 @@
+@media (max-width: 667.98px) {
+    .nav-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .menu-social {
+        order: 1;
+    }
+    
+    .menu-navegacao {
+        display: none;
+    }
+    
+    .hamburger-menu {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .hamburger-line {
+        width: 25px;
+        height: 3px;
+        background-color: #9C9C9C;
+        border-radius: 2px;
+    }
+    
+    .hamburger-text {
+        font-family: "IBM Plex Mono";
+        font-size: 12px;
+        color: #9C9C9C;
+    }
+    
+    main {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .container {
+        flex-direction: column;
+        padding: 0 20px;
+        width: 100%;
+    }
+    
+    .right {
+        order: 1;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    .right img {
+        max-width: 350px;
+        height: auto;
+        margin-top: 32px;
+    }
+    
+    .left {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .text {
+        margin-bottom: 30px;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .last-jobs {
+        margin-top: 20px;
+    }
+    
+    .job-list {
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 20px;
+    }
+    
+    .job-list li {
+        flex-shrink: 0;
+        width: 140px;
+        height: 55px;
+    }
+}
+
+@media (min-width: 668px) {
+    .hamburger-menu {
+        display: none;
+    }
+    
+    .menu-navegacao {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+}
