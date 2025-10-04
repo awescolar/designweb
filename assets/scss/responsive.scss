@@ -1,0 +1,97 @@
+@import 'layout';
+@import 'design';
+
+@media (max-width: 1100px) {
+    header {
+        @include container(28px 24px, 10px 48px, 0, space-between);
+    }
+
+    main {
+        @include container(0px, 96px 48px, 0, space-between);
+
+        h1 {
+            @include texto($h-font, $small-display-size, 800, $white)
+        }
+        h2 {
+            @include texto($h-font, $small-subtitle-siz, 200, $white)
+        }
+        p {
+            @include texto($text-font, $small-text-size, 400, $text-color)
+        }
+        #personal-img {
+            width: 250px;
+            height: 250px;
+        }
+    }
+    footer {
+        @include container(0, 20px 48px, 20px, center, flex-start, column);
+
+        .logo {
+            width: $small-client-logo-w;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        
+        @include container(28px 24px, 10px 16px, 0, space-between, center, row-reverse);
+        #menu-btn {
+            display: block;
+            background: none;
+            border: none;
+            outline: none;
+            display: flex;
+            &:hover {
+                cursor: pointer;
+            }
+            span {
+                @include texto($text-font, $big-text-size, 400, $text-color)
+            }
+        }
+        #top-menu {
+            display: none;
+        }
+
+        .small-menu {
+            background: $bg-gray;
+        }
+    }
+    main {
+        @include container(0px, 96px 16px, 0, center, center, column-reverse);
+
+        text-align: center;
+
+        #header-text {
+            align-items: center;
+
+            #heading-and-subheading {
+                align-items: center;
+                max-width: 600px;
+                #heading {
+                    align-items: center;
+                }
+            }
+
+            .btn-green {
+            width: 100%;
+            font-size: 14px;
+            padding: 21px 30px;
+            }
+        }
+    }
+
+    footer {
+        @include container(0, 20px 16px, 20px, center, flex-start, column);
+        overflow-inline:scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        scrollbar-width: 0px;
+
+        h3 {
+            position: sticky;
+            left: 0;
+        }
+    }
+}

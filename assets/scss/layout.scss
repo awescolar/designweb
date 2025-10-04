@@ -17,8 +17,18 @@
 header {
     @include container(28px 100px, 10px 90px, 0, space-between);
 
-    .small-menu, #menu-btn {
+    #menu-btn {
         display: none;
+    }
+    .small-menu {
+        @include container(8px 24px, 0, 8px, center, flex-start, column);
+        position: fixed;
+        top: 85px;
+        right: -200px;
+        transition: ease-in-out all 0.3s 
+    }
+    .open {
+            right: 16px;
     }
 
     #top-menu {
@@ -57,62 +67,3 @@ footer {
 }
 
 
-@media (max-width: 1100px) {
-    header {
-        @include container(28px 24px, 10px 48px, 0, space-between);
-    }
-    main {
-        @include container(0px, 96px 48px, 0, space-between);
-    }
-    footer {
-        @include container(0, 20px 48px, 20px, center, flex-start, column);
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-        
-        @include container(28px 24px, 10px 16px, 0, space-between, center, row-reverse);
-        
-        .open {
-            @include container(8px 24px, 0, 8px, center, flex-start, column);
-            position: absolute;
-            top: 85px;
-            right: 16px;
-        }
-        #menu-btn {
-            display: block;
-        }
-        #top-menu {
-            display: none;
-        }
-    }
-    main {
-        @include container(0px, 96px 16px, 0, center, center, column-reverse);
-        #header-text {
-            align-items: center;
-
-            #heading-and-subheading {
-                align-items: center;
-                max-width: 600px;
-                #heading {
-                    align-items: center;
-                }
-            }
-        }
-    }
-
-    footer {
-        @include container(0, 20px 16px, 20px, center, flex-start, column);
-        overflow-inline:scroll;
-        &::-webkit-scrollbar {
-            display: none;
-        }
-        scrollbar-width: 0px;
-
-        h3 {
-            position: sticky;
-            left: 0;
-        }
-    }
-}

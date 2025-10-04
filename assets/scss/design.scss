@@ -75,8 +75,9 @@ header {
 
 main {
     #personal-img {
-        transition: all 1s;
+        transition: all 0.5s;
         border-radius: 100%;
+        max-width: 350px;
         &:hover {
             border: solid 20px $bg-gray;
             animation: girar 5s linear infinite;
@@ -139,58 +140,7 @@ footer {
             img {
                 opacity: 1;
             }
-        }
-    }
-}
-
-@media (max-width: 1100px) {
-    main {
-        h1 {
-            @include texto($h-font, $small-display-size, 800, $white)
-        }
-        h2 {
-            @include texto($h-font, $small-subtitle-siz, 200, $white)
-        }
-        p {
-            @include texto($text-font, $small-text-size, 400, $text-color)
-        }
-        #personal-img {
-            width: 250px;
-            height: 250px;
-        }
-    }
-    footer {
-        .logo {
-            width: $small-client-logo-w;
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-        #menu-btn {
-            background: none;
-            border: none;
-            outline: none;
-            display: flex;
-            &:hover {
-                cursor: pointer;
-            }
-            span {
-                @include texto($text-font, $big-text-size, 400, $text-color)
-            }
-        }
-        .small-menu {
-            background: $bg-gray;
-        }
-    }
-
-    main {
-        text-align: center;
-        .btn-green {
-            width: 100%;
-            font-size: 14px;
-            padding: 21px 30px;
+            border-color: $green;
         }
     }
 }
