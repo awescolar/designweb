@@ -11,6 +11,12 @@ header .menu {
   gap: 30px;
 }
 
+.p-menu {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 160%;
+}
+
 .container {
   max-width: 1200px;
   margin-left: auto;

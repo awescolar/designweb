@@ -39,6 +39,23 @@ body {
     .menu-social {
         color: $cor-text-body;
     }
+
+}
+
+.menu-responsivo{
+    gap: 16px;
+    display: none;
+    .botao-menu {
+        background: none;
+        border: none;
+        color: $cor-text-body;
+        font-size: 20px;
+    }
+}
+.p-menu{
+font-size: 14px;
+color: $cor-text-body;
+font-weight: 400;
 }
 
 main {
