@@ -1,37 +1,50 @@
-# Tarefa - 1
+# Lista 1
 
-## Montagem de Projeto com Sass, GitHub e Vercel
+## Lista 1 - Evolução Responsiva do Portfólio (Sass + GitHub + Vercel + Figma)
 
-Nesta tarefa, você vai criar a primeira versão do seu portfólio pessoal, aplicando conceitos de organização de código e boas práticas com CSS e Sass. O objetivo é estruturar corretamente os arquivos, separando layout de design, reaproveitando classes para reduzir redundâncias e, ao final, publicar seu site online usando GitHub + Vercel.
+DESCRIÇÃO
+
+Time de front, vamos tirar o site do modo “desktop-only” e alinhar com o design de Figma. A missão é implementar a versão responsiva do portfólio, aderente aos tokens e componentes definidos no Figma. Sem “achismos”: seguir especificações do Figma. Tolerância de desvio visual: ±4px. Se algo não estiver claro no Figma, priorize consistência com os padrões já definidos nos frames.
+
+Objetivo de negócio: entregar UX consistente em mobile e desktop, com acessibilidade AA, performance saudável e pipeline de deploy automático.
 
 
 O QUE DEVE SER FEITO:
 
-1.  Criar a estrutura de pastas:
+1. Novo arquivo Sass: assets/scss/responsive.scss
+Importar em style.scss (ponto de entrada).
+2. Breakpoint único base: 668px
+Use media queries concentradas em responsive.scss.
+3. Menu responsivo:
+Até 667px: menu colapsado (hambúrguer), navegação por teclado funcional, foco visível.
+≥ 668px: menu horizontal conforme Figma.
+4. Layout responsivo conforme Figma:
+Reorganizar grids/containers/cards nos estados <668px e ≥668px seguindo espaçamentos, colunas e tipografia indicados no Figma.
+Sem valores “mágicos”: reutilize tokens/variáveis já existentes.
 
-|-- index.html
-|-- assets /
-    |-- css/
-    |-- scss/
-    |-- img/
+Estrutura de como ficará:
 
-2. Criar os arquivos na pasta scss/:
-style.scss -> para englobar todo o conteúdo de SCSS.
-layout.scss → para espaçamentos, alinhamentos e estrutura.
-design.scss → para cores, tipografias e botões.
-3. Compilar os dois arquivos em um único CSS final (ex.: style.css) dentro da pasta css/.
-4. Reaproveitar classes e elementos CSS sempre que possível, reduzindo código repetido e aumentando a reutilização de estilos compartilhados.
-5. Utilizar dados reais do próprio aluno (nome, foto, informações básicas), considerando que este será o início do portfólio pessoal de cada um.
-6. Subir o projeto no GitHub (branch principal).
-7. Integrar o repositório ao Vercel e publicar o site.
+assets/scss/
+|-- style.scss
+|-- design.scss
+|-- layout.scss
+|-- responsive.scss
 
+Exemplo mínimo (não é guia e nem receita, apenas dica):
 
-HABILIDADES TRABALHADAS:
-Organização de projetos front-end;
-Separação de responsabilidades no CSS (layout vs design);
-Uso de Sass para compilação de arquivos;
-Integração do GitHub com o Vercel (deploy automático);
-Publicação de site estático online.
+/* responsive.scss */
+@media (min-width: 668px) {
+  .navbar { /* desktop/tablet */ }
+  .navbar__toggle { display: none; }
+  .grid { /* colunas/gutters conforme Figma */ }
+}
+
+@media (max-width: 667.98px) {
+  .navbar { /* mobile */ }
+  .navbar__menu { /* offcanvas/overlay, focável, escapável com Esc */ }
+  .card-list { /* 1 col */ }
+}
+
 ENTREGA:
-Link do commit da tarefa no repositório no GitHub (branch do aluno);
+Link do commit da tarefa no repositório no GitHub (no fork e branch do aluno);
 Link do site publicado no Vercel.
