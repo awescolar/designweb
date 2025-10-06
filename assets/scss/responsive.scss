@@ -60,18 +60,9 @@
     }
     main {
         @include container(0px, 96px 16px, 0, center, center, column-reverse);
-
-        text-align: center;
-
         #header-text {
-            align-items: center;
-
             #heading-and-subheading {
-                align-items: center;
                 max-width: 600px;
-                #heading {
-                    align-items: center;
-                }
             }
 
             .btn-green {

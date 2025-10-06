@@ -330,17 +330,9 @@ footer .logo:hover {
     margin: 96px 16px;
     gap: 0;
     flex-direction: column-reverse;
-    text-align: center;
-  }
-  main #header-text {
-    align-items: center;
   }
   main #header-text #heading-and-subheading {
-    align-items: center;
     max-width: 600px;
-  }
-  main #header-text #heading-and-subheading #heading {
-    align-items: center;
   }
   main #header-text .btn-green {
     width: 100%;
