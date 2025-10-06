@@ -1,20 +1,15 @@
-@charset "UTF-8";
-header {
-  max-width: 1200px;
-  margin: auto;
-  margin-bottom: 66px;
-}
-header .menu {
-  margin-left: 30px;
-  margin-right: 50px;
+.flex-list {
   padding: 0;
-  gap: 30px;
+  margin: 0;
+  gap: 32px;
 }
 
-.p-menu {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  line-height: 160%;
+.header {
+  margin-bottom: 64px;
+}
+.header nav {
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container {
@@ -22,68 +17,55 @@ header .menu {
   margin-left: auto;
   margin-right: auto;
 }
-.container p {
-  margin-bottom: 38px;
+
+.perfil {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+  gap: 32px;
 }
 
-.last-jobs h5 {
-  margin-left: 15px;
-  margin-right: 15px;
-}
-.last-jobs .lista-sem-estilo {
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: flex;
-  max-width: 1200px;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 70px;
-}
-.last-jobs .lista-sem-estilo img {
-  width: 110%;
-}
-
-button {
-  padding: 21px 64px;
-}
-
-.display-flex, .menu-navegação, .menu-social, .container {
-  display: flex;
-}
-
-.alinhar-h-esquerda, .menu-navegação {
-  justify-content: flex-start;
-}
-
-.alinhar-v-esquerda {
-  align-items: flex-start;
-}
-
-.alinhar-h-direita, .menu-social {
-  justify-content: flex-end;
-}
-
-.alinhar-v-direita {
-  align-items: flex-end;
-}
-
-.alinhar-coluna {
+.esquerda {
+  justify-content: center;
   flex-direction: column;
+  gap: 32px;
+  max-width: 100%;
 }
 
-.alinhar-linha {
-  flex-direction: row;
+.display-flex, .flex-list, .container {
+  display: flex;
 }
 
-.dividir-extremidades {
+.ultimos-trabalhos {
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  max-width: 1200px;
+}
+
+.lista-de-trabalhos {
+  margin: 0;
   padding: 0;
   justify-content: space-between;
 }
+.lista-de-trabalhos li {
+  justify-content: center;
+  width: 170px;
+  height: 60px;
+  box-sizing: border-box;
+}
 
-.ajuste-menu, header {
-  padding: 12px 80px;
+.heading, .heading-2, .heading-1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 100%;
+}
+
+.body, .body-2, .body-1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 160%;
 }
 
 /*# sourceMappingURL=layout.css.map */

@@ -1,75 +1,104 @@
 body {
-  font-family: "IBM Plex Mono", monospace;
   background-color: #080808;
-  color: #9C9C9C;
-  font-size: 18px;
-  line-height: 160%;
-}
-
-.header {
-  border-radius: 0 0 6px 6px;
-  background: #1B1B1B;
-  color: #9C9C9C;
-}
-.header .menu li {
-  color: #9C9C9C;
   font-family: "IBM Plex Mono", monospace;
-  letter-spacing: 0.14px;
-}
-.header .menu-navegacao {
-  color: #9C9C9C;
-}
-.header .menu-social {
   color: #9C9C9C;
 }
 
-.menu-responsivo {
-  gap: 16px;
-  display: none;
-}
-.menu-responsivo .botao-menu {
-  background: none;
-  border: none;
-  color: #9C9C9C;
-  font-size: 20px;
+.header .container {
+  box-sizing: border-box;
+  background-color: #1B1B1B;
+  height: 74px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
-.p-menu {
+.menu-navegacao a {
   font-size: 14px;
   color: #9C9C9C;
   font-weight: 400;
 }
 
-main .perfil h1 {
-  color: #FFFFFF;
-  font-family: "Raleway", sans-serif;
-  font-size: 44px;
+.menu-responsivo {
+  display: none;
+  gap: 16px;
 }
-main .perfil h3 {
-  color: #FFFFFF;
-  font-family: "Raleway", sans-serif;
-  font-size: 24px;
-  font-weight: 200;
-}
-main .perfil button {
-  font-size: 16px;
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 700;
-  color: #FFFFFF;
-  padding: 21px 64px;
-  border-radius: 4px;
-  border: 1px solid #62BA1B;
-  background: #62BA1B;
-  box-shadow: 0 8px 30px 0 rgba(63, 142, 0, 0.5);
+.menu-responsivo .botao-menu {
+  border: none;
+  background: none;
+  font-size: 20px;
+  color: #9C9C9C;
 }
 
-.lista-sem-estilo, .header {
+.menu-social a {
+  color: #9C9C9C;
+  font-size: 20px;
+}
+
+.esquerda {
+  width: 568px;
+}
+.esquerda button {
+  padding-left: 64px;
+  padding-right: 64px;
+  height: 64px;
+  max-width: 360px;
+  background-color: #3F8E00;
+  box-sizing: border-box;
+  border: 2px solid #62BA1B;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 8px 30px rgba(63, 142, 0, 0.5019607843);
+  transition: transform 0.1s ease;
+}
+.esquerda button:active {
+  transform: scale(0.95);
+}
+
+.direita {
+  margin: 0;
+}
+.direita img {
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.lista-sem-estilo {
   list-style: none;
 }
 
-.link {
-  color: #9C9C9C;
+.link-sem-estilo {
   text-decoration: none;
+}
+
+.heading, .heading-2, .heading-1 {
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+}
+
+.heading-1 {
+  font-size: 44px;
+  font-weight: 800;
+}
+
+.heading-2 {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.body-1 {
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.body-2 {
+  font-size: 14px;
+  color: #9C9C9C;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=design.css.map */

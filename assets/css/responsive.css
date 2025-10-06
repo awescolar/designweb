@@ -21,15 +21,15 @@
   .perfil .left {
     width: 350px;
   }
-  .last-jobs {
+  .ultimos-trabalhos {
     max-width: 350px;
     justify-content: flex-start;
   }
-  .job-list {
+  .lista-de-trabalhos {
     overflow-x: auto;
     gap: 24px;
   }
-  .job-list li {
+  .lista-de-trabalhos li {
     min-width: 160px;
   }
 }

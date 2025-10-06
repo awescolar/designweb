@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
+    <title>Portfólio Pessoal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,61 +11,79 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
     <header class="header">
-        <nav class="container dividir-extremidades">
-            <ul class="menu menu-navegacao display-flex lista-sem-estilo">
-                <li><a class="link" href="#">Estudos de caso</a></li>
-                <li><a class="link" href="#">Trabalhos</a></li>
-                <li><a class="link" href="#">Entre em contato</a></li>
+        <nav class="container">
+            <ul class="menu menu-navegacao lista-sem-estilo flex-list">
+                <li>
+                    <a href="#" class="link-sem-estilo">Estudos de caso</a>
+                </li>
+
+                <li>
+                    <a href="#" class="link-sem-estilo">Trabalhos</a>
+                </li>
+ 
+                <li>
+                    <a href="#" class="link-sem-estilo">Entre em contato</a>
+                </li>
             </ul>
-            <ul class="menu menu-social display-flex lista-sem-estilo">
+            <ul class="menu menu-social lista-sem-estilo flex-list">
                 <li>
-                    <a class="link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
                 </li>
+    
+                    <li>
+                    <a href="#">
+                        <i class="fa-brands fa-behance"></i>
+                    </a>
+                </li>
+   
                 <li>
-                    <a class="link" href="#"><i class="fa-brands fa-behance"></i></a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
                 </li>
-                <li>
-                    <a class="link" href="#"><i class="fa-brands fa-twitter"></i></a>
-                </li>
+                    
             </ul>
             <div class="menu-responsivo">
-                <button class="botao-menu">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <p class="p-menu">Menu</p>
+                <button class="botao-menu"><i class="fa-solid fa-bars"></i></button>
+                <p class="body-2">Menu</p>
             </div>
         </nav>
     </header>
 
     <main>
 
-        <section class="container">
-            <div class="perfil">
-                <h1>Pedro Gabriel</h1>
-                <h3>Estudante / Dev Front-end</h3>
-                <p>Sou um jovem programador que busca aprender cada vez mais, sempre buscando superar as dificuldades. Possuo conhecimento básico em HTML, CSS e Java Script, e um mais avançado em manutenção de hardwares, além do inglês intermediário/avançado que adquiri ao longo da vida.</p>
-                <button>
+        <section class="container perfil">
+            <div class="esquerda display-flex">
+                <div class="conteudo de texto">
+                    <div class="titulos">
+                        <h1 class="heading-1">Pedro Gabriel</h1>
+                        <h3 class="heading-2">Estudante / Dev Front-end</h3>
+                    </div>
+                    <p class="body-2">Sou um jovem programador que busca aprender cada vez mais, sempre buscando superar as dificuldades. Possuo conhecimento básico em HTML, CSS e Java Script, e um mais avançado em manutenção de hardwares, além do inglês intermediário/avançado que adquiri ao longo da vida.</p>
+                </div>
+                <button class="body-1">
                     Vamos trabalhar juntos <i class="fa-solid fa-chevron-right"></i></i>
                 </button>
             </div>
-            <figure class="foto">
+            <figure class="direita">
                 <img src="assets/img/pedrofil.png" alt="Foto de Pedro Gabriel">
             </figure>
         </section>
-        <section class="container alinhar-coluna last-jobs">
+
+        <section class="ultimos-trabalhos flex-column">
             <h5>Trabalhou em:</h5>
-            <ul class="lista-sem-estilo display-flex">
-                <li><img src="assets/img/img-job-1.svg" alt=""></li>
-                <li><img src="assets/img/img-job-2.svg" alt=""></li>
-                <li><img src="assets/img/img-job-3.svg" alt=""></li>
-                <li><img src="assets/img/img-job-4.svg" alt=""></li>
-                <li><img src="assets/img/img-job-5.svg" alt=""></li>
+            <ul class="display-flex lista-de-trabalhos lista-sem-estilo">
+                <li class="display-flex"><img src="assets/img/img-job-1.svg" alt="logo do clickup "></li>
+                <li class="display-flex"><img src="assets/img/img-job-2.svg" alt="logo do dropbox"></li>
+                <li class="display-flex"><img src="assets/img/img-job-3.svg" alt="logo do paychex"></li>
+                <li class="display-flex"><img src="assets/img/img-job-4.svg" alt="logo do elastic"></li>
+                <li class="display-flex"><img src="assets/img/img-job-5.svg" alt="logo do stripe"></li>
             </ul>
         </section>
 
     </main>
-    
 </body>
 </html>

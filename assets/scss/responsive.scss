@@ -1,5 +1,3 @@
-
-
 $break-mobile: 768px;
 
 @media (max-width: $break-mobile) {
@@ -33,12 +31,12 @@ $break-mobile: 768px;
         }
     }
 
-    .last-jobs {
+    .ultimos-trabalhos {
         max-width: 350px;
         justify-content: flex-start;
     }
 
-    .job-list{
+    .lista-de-trabalhos{
         overflow-x: auto;
         gap: 24px;
         li {
