@@ -65,12 +65,6 @@ body {
         box-sizing: border-box;
         border: 2px solid $cor-border-button;
         border-radius: 4px;
-        cursor: pointer;
-        box-shadow: 0 8px 30px #3F8E0080;
-        transition: transform .1s ease;
-    }
-    button:active {
-        transform: scale(0.95);
     }
 }
 

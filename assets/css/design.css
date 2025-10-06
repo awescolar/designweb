@@ -48,12 +48,6 @@ body {
   box-sizing: border-box;
   border: 2px solid #62BA1B;
   border-radius: 4px;
-  cursor: pointer;
-  box-shadow: 0 8px 30px rgba(63, 142, 0, 0.5019607843);
-  transition: transform 0.1s ease;
-}
-.esquerda button:active {
-  transform: scale(0.95);
 }
 
 .direita {
