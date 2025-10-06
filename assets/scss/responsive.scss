@@ -1,0 +1,24 @@
+/* breapoint para tablet + */
+@media (min-width: 668px) {
+  .navbar {
+    
+  }
+  .navbar__toggle { display: none; }
+  .grid {
+
+  }
+}
+/* breapoint para celulares*/
+@media (max-width: 667px) {
+  .navbar {
+    
+  }
+  .navbar__menu {
+    
+  }
+  .card-list {
+    
+  }
+
+  
+}
