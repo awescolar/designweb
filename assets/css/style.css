@@ -80,5 +80,10 @@ regras de break points
   }
 }
 /* breapoint para celulares*/
+@media (max-width: 667px) {
+  .navbar__menu {
+    /*--*/
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
