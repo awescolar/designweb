@@ -1,65 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Portfólio - Tailwind</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
 </head>
-<body>
 
-    <header class="header">
-        <nav class="container dividir-extremidades">
-            <ul class="menu menu-navegacao display-flex lista-sem-estilo">
-                <li><a href="#">Estudos de caso</a></li>
-                <li><a href="#">Trabalhos</a></li>
-                <li><a href="#">Entre em contato</a></li>
-            </ul>
-            <ul class="menu menu-social display-flex lista-sem-estilo">
-                <li>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-brands fa-behance"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<body class="text-cyan-500 p-5 font-[Alan_Sans]">
 
-    <main>
 
-        <section class="container">
-            <div class="perfil">
-                <h1>Bruno Nakamura</h1>
-                <h3>UX / Dev Front-end</h3>
-                <p>Sou um híbrido raro: Design Systems + Engenharia de Produto. Entrego de ponta a ponta — da descoberta à produção — com métricas de negócio na cabeceira e DX/UX no detalhe. Tradução simultânea entre PMs, Design, Front, Back e Data. Sem teatrinho: shippo, meço, repito.</p>
-                <button>
-                    Vamos trabalhar juntos <i class="fa-solid fa-chevron-right"></i></i>
-                </button>
-            </div>
-            <figure class="foto">
-                <img src="assets/img/perfil.png" alt="Foto do Bruno Nakamura">
-            </figure>
-        </section>
-        <section class="container alinhar-coluna last-jobs">
-            <h5>Trabalhou em:</h5>
-            <ul class="lista-sem-estilo display-flex">
-                <li><img src="assets/img/img-job-1.svg" alt=""></li>
-                <li><img src="assets/img/img-job-2.svg" alt=""></li>
-                <li><img src="assets/img/img-job-3.svg" alt=""></li>
-                <li><img src="assets/img/img-job-4.svg" alt=""></li>
-                <li><img src="assets/img/img-job-5.svg" alt=""></li>
-            </ul>
-        </section>
+    <!-- 
+        fundo branco
+        padding 6 * referencia
+        border-radius
+        sombra
+      -->
+    <h1 class="text-4xl font-bold text-gray-700 mb-2">Título Alan Sans</h1>
+    <!-- configuração de parágrafo -->
+    <p class="text-gray-400 font-[300] mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit pariatur, atque mollitia possimus aspernatur repellendus.</p>
+    <section class="bg-gray-950 p-6 rounded shadow">
+        <!-- alterando a cor do texto para cinza escuro -->
+        <p class="text-gray-400 text-2xl font-[300]">
+            Hello World!
+        </p>
+    </section>
 
-    </main>
-    
+    <!-- 
+        flexbox     -> .flex
+        grid        -> .grid
+        justify-*   -> alinhamento horizontal
+        items-*     -> alinhamento vertical
+        gap-*       -> controle de espaçamentos entre os itens
+    -->
+
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-3 mt-6">
+        <div class="bg-blue-100 text-blue-500 p-4 rounded">Design</div>
+        <div class="bg-green-100 text-green-500 p-4 rounded">Deenvolvimento</div>
+        <div class="bg-red-100 text-red-500 p-4 rounded">Consultoria</div>
+    </section>
+
 </body>
+
 </html>
