@@ -1,0 +1,37 @@
+@media (max-width: 768px) {
+  body {
+    margin: 0 0 72px 0;
+  }
+  .header .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .header .container .menu-navegacao {
+    display: none;
+  }
+  .menu-responsivo {
+    display: flex;
+  }
+  .container {
+    max-width: 100%;
+  }
+  .perfil {
+    flex-direction: column-reverse;
+  }
+  .perfil .left {
+    width: 350px;
+  }
+  .ultimos-trabalhos {
+    max-width: 350px;
+    justify-content: flex-start;
+  }
+  .lista-de-trabalhos {
+    overflow-x: auto;
+    gap: 24px;
+  }
+  .lista-de-trabalhos li {
+    min-width: 160px;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

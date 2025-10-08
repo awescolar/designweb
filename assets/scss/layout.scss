@@ -1,43 +1,89 @@
-/**
-regras de break points
-*/
-
 $break-desktop: 1200px;
-$break-tablet: 900px;
-$break-mobile: 768px;
-$break-watch: 400px;
 
+.flex-list{
+    padding: 0;
+    margin: 0;
+    gap: 32px;
+    @extend .display-flex;
+}
 
-.container{
+.header {
+    margin-bottom: 64px;
+    nav{
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.container {
     max-width: $break-desktop;
     margin-left: auto;
     margin-right: auto;
     @extend .display-flex;
 }
 
-.display-flex{
+.perfil{
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+    gap: 32px;
+}
+
+.esquerda {
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 100%;
+}
+
+.display-flex {
     display: flex;
 }
 
-.alinhar-h-esquerda{
-    justify-content: flex-start;
-}
-.alinhar-v-esquerda{
-    align-items: flex-start;
-}
-.alinhar-h-direita{
-    justify-content: flex-end;
-}
-.alinhar-v-direita{
-    align-items: flex-end;
-}
-.alinhar-coluna{
+.ultimos-trabalhos {
     flex-direction: column;
-}
-.alinhar-linha{
-    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    max-width: $break-desktop;
+} 
+
+.lista-de-trabalhos{
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    li{
+        justify-content: center;
+        width: 170px;
+        height: 60px;
+        box-sizing: border-box;
+    }
 }
 
-.dividir-extremidades{
-    justify-content: space-between;
+.heading {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 100%;
+}
+
+.heading-1 {
+    @extend .heading;
+}
+
+.heading-2 {
+    @extend .heading;
+}
+
+.body {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 160%;
+}
+
+.body-1 {
+    @extend .body;
+}
+
+.body-2 {
+    @extend .body;
 }
