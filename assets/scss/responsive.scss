@@ -1,37 +1,73 @@
-/* breapoint para tablet + */
-@media (max-width: 668px) {
-    .navbar {
-      
+
+$cor-bg-nav: #1B1B1B;
+$cor-text-body: #9C9C9C;
+$espaco-1: 8px;
+$espaco-2: 12px;
+$espaco-3: 16px;
+$espaco-4: 32px;
+$espaco-5: 64px;
+
+@media (min-width: 668px) {
+  .navbar_toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 667.98px) {
+    .header nav {
+        flex-direction: row-reverse;
+        align-items: center;
     }
-    .navbar__toggle { display: none; }
-    .grid { 
+
+    .menu-navegacao {
+        display: none;
+        flex-direction: column;
+        background: $cor-bg-nav;
+        position: absolute;
+        top: $espaco-5;
+        right: $espaco-3;
+        width: auto;
+        padding: $espaco-2 $espaco-3;
+    }
+
+    .navbar_toggle {
+        display: block;
+        cursor: pointer;
+        color: $cor-text-body;
+        background: $cor-bg-nav;
+        border: none;
+    }
+
+    .menu-wrapper:hover .menu-navegacao {
+        display: flex;
+    }
+
+    main {
+    .container:first-of-type{
         flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .perfil {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+
+        button {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 90%;
+            display: block;
+        }
+    }
+
+    .job-list {
+        flex-direction: column;
         align-items: center;
 
-    }
-  }
-  /* breapoint para celulares*/
-  @media (max-width: 667px) {
-    .navbar {
-        .grid{
-            
-            flex-direction: column-reverse;
-            justify-content: center;
-            align-items: center;
+        li {
+            margin-bottom: $espaco-1;
         }
-      
     }
-    .navbar__menu {
-      /*--*/
-    }
-    .card-list {
-            transition: transform 0.3s ease;
-            transform-style: preserve-3d;
-            
-        
-      
-    }
-  
-    
-  }
+}
+}
